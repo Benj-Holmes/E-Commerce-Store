@@ -16,13 +16,13 @@ app.use(bodyParser.json());
 // app.use(passport.initialize());
 // app.use(passport.session());
 
-// Routes
+// Route Handlers -------------------------------------------
 // app.use('/cart', require('./routes/cartRoutes'));
 // app.use('/orders', require('./routes/orderRoutes'));
 // app.use('/payment', require('./routes/paymentRoutes'));
 // app.use('/products', require('./routes/productRoutes'));
 // app.use('/reviews', require('./routes/reviewRoutes'));
-app.use('/users', require('./routes/userRoutes'));
+app.use('/api/user', require('./routes/userRoutes'));
 
 // Start server
 const PORT = process.env.PORT || 4000;
