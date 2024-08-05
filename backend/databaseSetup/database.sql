@@ -3,8 +3,9 @@ CREATE TABLE users (
   first_name VARCHAR(50),
   last_name VARCHAR(50),
   email VARCHAR(255) UNIQUE,
-  password VARCHAR(255) NOT NULL,
-  created_at DATE
+  password VARCHAR(255),
+  created_at DATE,
+  google_id VARCHAR(255) UNIQUE;
  );
 
  CREATE TABLE products (
