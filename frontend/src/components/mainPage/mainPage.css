@@ -16,3 +16,26 @@
 .logoHolder Img {
     width: 70%;
 }
+.seasonalDisplay img {
+    width: 100%;
+    overflow: hidden;
+}
+.seasonalDisplay h1 {
+    position: absolute;
+    font-size: 4rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(214, 217, 218);
+    text-shadow:
+    2px  2px 0 #000, 
+   -2px  2px 0 #000, 
+    2px -2px 0 #000, 
+   -2px -2px 0 #000, 
+    1px  1px 0 #000, 
+   -1px  1px 0 #000,
+    1px -1px 0 #000,
+   -1px -1px 0 #000;
+    letter-spacing: 3px;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+}
