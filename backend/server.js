@@ -1,14 +1,29 @@
 const express = require('express');
-
+const session = require('express-session');
+const passport = require('passport');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+require('dotenv').config();
+// require('./config/passportconfig');
+// require('./config/googlepassport');
 
 const app = express();
 
-const PORT = 4000;
+// Middleware
+app.use(cors());
+app.use(bodyParser.json());
+// app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: true }));
+// app.use(passport.initialize());
+// app.use(passport.session());
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
+// Routes
+// app.use('/cart', require('./routes/cartRoutes'));
+// app.use('/orders', require('./routes/orderRoutes'));
+// app.use('/payment', require('./routes/paymentRoutes'));
+// app.use('/products', require('./routes/productRoutes'));
+// app.use('/reviews', require('./routes/reviewRoutes'));
+app.use('/users', require('./routes/userRoutes'));
 
-app.listen(PORT, () => {
-    console.log(`Server Running on Port ${PORT}`);
-})
+// Start server
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
