@@ -42,3 +42,9 @@ items in their current shopping cart.
 
 The second half of the homepage contains a product spotlight of a new range of trainers, which have animated text when the user hovers over them. It also 
 contains a grid of logos of brands that the store stocks, and a short contact us section in the footer.
+
+### Product Page
+
+![ProductPage](https://github.com/user-attachments/assets/299f5142-211b-4d5b-8e7e-a976f1b52d2a)
+
+Here is an example of the product page, the user is able to sort through the products with a criteria of their choosing.
