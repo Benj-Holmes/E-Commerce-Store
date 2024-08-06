@@ -61,7 +61,7 @@ the size that they would like to buy when they are ready. Below this is a custom
 * The second part of the product details page rerenders some of the product list into a "discover more items" section, and the user can select one of these items
 to rerender the product details page with that product instead.
 
-### Authentication
+### Account Setup
 
 ![login](https://github.com/user-attachments/assets/9d9435ac-a07b-48d2-ab50-e01688cf1205)
 
