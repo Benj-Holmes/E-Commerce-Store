@@ -1,0 +1,125 @@
+.itemlist2 {
+   width: 95%;
+   min-height: 200px;
+   height: 100%;
+}
+.checkoutContainer {
+    min-height: 1075px;
+}
+.checkoutContainer h1 {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: -150px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.infoContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    min-height: 1050px;
+    margin-top: 0px;
+}
+.infoContainer h1 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-size: 50px;
+    margin-top: 60px;
+    color: white;
+}
+.headerHolder {
+    width: 50%;
+    height: 100%;
+    min-height: 300px;
+    background-color: blue;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+   
+}
+.infoContainer2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 150px;
+    min-height: 900px;
+}
+.paymentContainer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+.logLink {
+    color: blue;
+    text-decoration: underline;
+    padding-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.checkoutItem{ 
+    display: grid;
+    height: 150px;
+    font-size: 20px;
+    align-items: center;
+    grid-template-columns: 1fr 4fr 2fr 3fr 1fr;
+    background-color: gray;
+    border: 3px solid black;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+.removeText {
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(180, 0, 0);
+    text-shadow: 1px 1px 1px rgb(133, 132, 132);
+    letter-spacing: 1px;
+    margin-right: 20px;
+    margin-left: -20px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: aliceblue;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.checkoutItem img {
+    width: 120px;
+    height: 120px;
+    padding-left: 10px;
+}
+.qtyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qtyContainer p {
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.successBox {
+    min-height: 1050px;
+}
+.paymentContainer button {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 26px;
+    color: white;
+    background-color: blue;
+    border: 2px solid black;
+    height: 80%;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.checkoutItem img {
+    margin-left: 20px;
+}

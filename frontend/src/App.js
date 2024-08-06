@@ -10,6 +10,7 @@ import Footer from './components/footer/footer';
 import ProductPage from './components/productPage/productPage';
 import Product from './components/productPage/product';
 import AccountPage from './components/accountPage/accountPage';
+import Checkout from './components/checkout/checkout';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Route path='/products' element={<><Header /><ProductPage /><Footer /></>} />
           <Route path='/products/:id' element={<><Header /><Product /><Footer /></>} />
           <Route path='/account' element={<><Header /><AccountPage /><Footer /></>} />
+          <Route path='/checkout'  element={<><Header /> <Checkout /> <Footer /> </>} />
+
         </Routes>
       </BrowserRouter>
     </div>

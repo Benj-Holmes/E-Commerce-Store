@@ -38,7 +38,8 @@ CREATE TABLE cart_item (
   product_id BIGSERIAL REFERENCES products(id),
   cart_id BIGSERIAL REFERENCES cart(id),
   quantity INTEGER,
-  primary key (product_id, cart_id)
+  primary key (product_id, cart_id),
+  item_size VARCHAR(255)
 );
 
 CREATE TABLE orders (
