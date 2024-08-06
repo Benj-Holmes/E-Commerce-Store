@@ -22,10 +22,10 @@
 .cartButton {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 10%;
     cursor: pointer;
 }
+
 .cartButton img {
     width: 65px;
 }
@@ -38,3 +38,36 @@
 .midButtons div {
     cursor: pointer;
 }
+.cartQuantity {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartQuantity p {
+    position: absolute;
+    top: -15px; 
+    right: -10px; 
+    background-color: white; 
+    color: black; 
+    border-radius: 50%; 
+    padding-top: 0px;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 4px; 
+    border: 2px solid lightblue; 
+    font-size: 1.2rem; 
+    line-height: 1.5;
+    font-weight: bold; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    min-width: 24px; 
+    min-height: 24px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+
