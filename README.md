@@ -1,4 +1,4 @@
-#E-Commerce-Store
+# E-Commerce-Store
 This is a Full-Stack application, using the PERN stack (Postgres, Express, Node, React), based on an ecommerce store, 
 in which a user is able to select the products, and sort them how they like. They can add selected products to their
 cart, which will be saved inbetween sessions if the user logs in. When they are finished they can pay via the checkout.
