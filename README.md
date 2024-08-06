@@ -37,3 +37,8 @@ The hardest part of this project was the authentication and having log ins persi
 Here is the top of the Homepage, where the user sees a rotating carousel of images depicting the new clothing the store has, from the header, the user
 can return to the homepage, access the products, their account, the checkout, or open their shopping cart. At all times they can see the quantity of 
 items in their current shopping cart.
+
+![Homepage2](https://github.com/user-attachments/assets/cd8ced89-cb24-41fe-b356-3237238b20bf)
+
+The second half of the homepage contains a product spotlight of a new range of trainers, which have animated text when the user hovers over them. It also 
+contains a grid of logos of brands that the store stocks, and a short contact us section in the footer.
