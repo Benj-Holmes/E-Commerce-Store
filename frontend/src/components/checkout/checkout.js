@@ -39,7 +39,7 @@ const Checkout = () => {
                         { cartItems !== null ? cartItems.map((item, index) => {
                         return <CheckoutItem key={index} product_id={item.product_id} cart_id={item.cart_id}
                         quantity={item.quantity} item_size={item.item_size} user_id={item.user_id}
-                        name={item.name} description={item.description} price={item.priceInt} 
+                        name={item.name} description={item.description} price={item.price} 
                         pic_path={item.pic_path} /> })
                         : '' }
                     </div>

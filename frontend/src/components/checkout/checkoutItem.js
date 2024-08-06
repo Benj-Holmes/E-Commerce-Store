@@ -14,8 +14,13 @@ const handleDelete = () => {
     dispatch(setProdIdForDeletion(props.product_id));
     dispatch(deleteItemFromCart(props.product_id)).then(() => dispatch(getCartItems()));
 }
-
-let totalPrice = props.price * props.quantity;
+console.log(props);
+// The Price comes from the DB with a £ Sign as a String so it must be converted into a number or we get errors
+const turnPriceToNumber = (str) => {
+    return parseFloat(str.replace(/[^\d.]/g, ''));
+}
+const price = turnPriceToNumber(props.price);
+let totalPrice = price * props.quantity;
 
 const handleQuantity = (direction) => {
     if (direction === 'up') {

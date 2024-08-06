@@ -4,6 +4,10 @@ const router = Router();
 
 // Check if a user has a cart, and if not, creates one
 const checkCreateCart = (req, res) => {
+    // We need this block to check for a user, otherwise we get an error if it is undefined
+    if (!req.user || !req.user.id) {
+        return res.status(401).json({ message: 'User is not authenticated' });
+    }
     const userId = req.user.id;
     if (req.user) {
     pool.query(`SELECT * FROM cart WHERE user_id = $1 AND is_current_cart = true`, 
@@ -27,6 +31,10 @@ const checkCreateCart = (req, res) => {
 
 // Get all of a specific users cart items.
 const getCartItems = (req, res) => {
+    // We need this block to check for a user, otherwise we get an error if it is undefined
+    if (!req.user || !req.user.id) {
+        return res.status(401).json({ message: 'User is not authenticated' });
+    }
     const userId = req.user.id;
     if (req.user) {
     pool.query(`SELECT * FROM cart WHERE user_id = $1 AND is_current_cart = true`,
