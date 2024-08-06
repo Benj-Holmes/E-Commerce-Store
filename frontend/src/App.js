@@ -8,6 +8,7 @@ import Header from './components/header/header';
 import MainPage from './components/mainPage/mainPage';
 import Footer from './components/footer/footer';
 import ProductPage from './components/productPage/productPage';
+import Product from './components/productPage/product';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<><Header /><MainPage /><Footer /></>} />
           <Route path='/products' element={<><Header /><ProductPage /><Footer /></>} />
+          <Route path='/products/:id' element={<><Header /><Product /><Footer /></>} />
         </Routes>
       </BrowserRouter>
     </div>
