@@ -1,0 +1,47 @@
+.cardHolder {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardHolder:hover {
+    transform: scale(1.05);
+}
+
+.cardHolder img {
+    width: 100%;
+    height: auto;
+}
+
+.prodInfo {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.prodName {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.prodPrice {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 5px 0;
+    align-self: flex-start;
+}
+
