@@ -1,15 +1,29 @@
-label {
-    margin-right: 10px;
-}
+
 .sortByContainer {
-    width: 100%;
-    height: 100%;
-    margin: 10px;
-}
-.sortByContainer form {
-    float: left;
-    margin-left: 5%;
-}
-#sortBy {
-    width: 20%;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sortByContainer label {
+    font-size: 16px;
+    color: #333; 
+    margin-bottom: 5px; 
+  }
+  
+  .sortByContainer select {
+    width: 250px; 
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .sortByContainer select:focus {
+    border-color: blue; 
+  }
