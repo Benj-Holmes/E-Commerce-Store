@@ -1,0 +1,63 @@
+.logInContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 1200px;
+}
+.logInCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 800px;
+    border-radius: 5%;
+    background-color: rgb(214, 217, 218);
+    border: 1px solid black;
+    margin-top: 50px;
+}
+.logTitle {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+}
+.logInCard input {
+    width: 70%;
+    text-align: center;
+    height: 35px;
+    margin: 15px;
+    
+}
+.logInCard h3 {
+    margin-top: 75px;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+.submitBtn {
+    width: 50%;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 40px;
+}
+.googleDiv {
+    margin-top: 75px;
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+}
+.googleDiv img {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 50%;
+}
