@@ -75,6 +75,11 @@ form, or authenticate through Google.
   ![google](https://github.com/user-attachments/assets/80a5c0fd-a6df-4fe7-aa8e-4575ca9fc578)
 
 * This is What the user will be redirected too if they choose Google Authentication
+  
+![googleauth](https://github.com/user-attachments/assets/25c8ebda-e0ad-450e-a407-8864d85b2cec)
+
+* Here is an example of what will be stored in the Postgres database for a user who has used Google authentication, we can see they lack a number of pieces of info
+that a normal user would have.
 
 
 
