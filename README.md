@@ -61,8 +61,27 @@ the size that they would like to buy when they are ready. Below this is a custom
 * The second part of the product details page rerenders some of the product list into a "discover more items" section, and the user can select one of these items
 to rerender the product details page with that product instead.
 
+### Authentication
+
+![login](https://github.com/user-attachments/assets/9d9435ac-a07b-48d2-ab50-e01688cf1205)
+
+* If the user tries to access the account page while not authorised, they will instead see the Login screen, where they can either log in, switch to the Register
+form, or authenticate through Google.
+
+![register](https://github.com/user-attachments/assets/e66a20f0-56df-4ab9-9442-0101c780844b)
+
+* Here is the Registration Form
+
+  ![google](https://github.com/user-attachments/assets/80a5c0fd-a6df-4fe7-aa8e-4575ca9fc578)
+
+* This is What the user will be redirected too if they choose Google Authentication
+
+
+
+
+
 ### Account Page
-Still in Progress! stay tuned.
+
 ### Checkout
 Still in Progress! stay tuned.
 ### Shopping Cart
