@@ -1,0 +1,132 @@
+.cartContainer {
+    width: 40%;
+    position: absolute;
+    z-index: 999;
+    right: 0px;
+    height: 100%;
+    background-color: white;
+    overflow-y: scroll;
+    border: 1px solid gray;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    border-bottom: 1px solid black;
+   
+}
+.buttons p {
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.shoppingCart h1 {
+    position: relative;
+    bottom: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    letter-spacing: 2.5px;
+    margin-top: 10px;
+}
+.closeMenu {
+    font-size: 20px;
+    border: 1px solid black;
+    position: absolute;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    border-radius: 20%;
+}
+.deleteItem {
+    border-right: 1px solid black;
+    border-radius: 1%;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deleteItem:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+.cartItem {
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr 2fr;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    border-bottom: 3px solid black;
+    width: 95%;
+    height: 100%;
+    background-color: rgb(209, 209, 209);
+}
+.cartItem img {
+    height: 85px;
+    width: 85px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 10%;
+}
+.cartItem h4 {
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.prodInfo {
+    
+    width: 40%;
+    height: 50%;
+   
+}
+.prodInfo p {
+    
+    font-size: 15px;
+}
+.checkout {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    
+}
+.checkout p {
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px;
+    width: 45%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+.cartTop {
+    padding: 10px;
+    background-color: rgb(214, 217, 218);
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid black;
+}
+.cartTop h1 {
+    font-family:'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.logReminder {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 22px;
+    color: white;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 20px;
+}
