@@ -81,15 +81,19 @@ form, or authenticate through Google.
 * Here is an example of what will be stored in the Postgres database for a user who has used Google authentication, we can see they lack a number of pieces of info
 that a normal user would have.
 
+### Shopping Cart
 
+![cart](https://github.com/user-attachments/assets/542d1172-33b0-4933-b22a-0ec7443e9b60)
+* Here is an Example of a Shopping Cart, all of the items are on display, with an option to remove them from the cart. If the user is not logged in, this is considered a temporary cart, and they will be prompted to log in, which will change the items to a regular shopping cart which will be saved in the database, and
+then the user can come back to it at a later time.
 
-
+![cart2](https://github.com/user-attachments/assets/54bc5563-0048-4a28-ac73-a224468932b4)
+* If the user is logged in, their cart items are saved, and the reminder to log in is not present.
 
 ### Account Page
-
+Still in Progress! Stay tuned!
 ### Checkout
 Still in Progress! stay tuned.
-### Shopping Cart
-Still in Progress! stay tuned.
+
 
 
