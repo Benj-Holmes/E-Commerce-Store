@@ -70,7 +70,7 @@ const Register = (props) => {
                         <p> Your Registration was Successful, you can Now Log In. </p>    
                         :
                         ''}
-                    <h3 onClick={() => dispatch(changeMenu('Log In'))}> Already Registered? Log In Here </h3>
+                    <button className='btn2' onClick={() => dispatch(changeMenu('Log In'))}> Go to Log In </button>
                 </div>
             </div>
     );

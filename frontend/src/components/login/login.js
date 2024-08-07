@@ -50,11 +50,11 @@ const LogIn = () => {
                         onChange={e => dispatch(updateLogInPassword(e.target.value))} />
                         <button className='submitBtn' onClick={attemptLogin}> Submit </button> 
                     
-                    <h3 onClick={() => dispatch(changeMenu('Register'))}> Not Registered? Click Here </h3>
                     <div className='googleDiv' onClick={googleSignIn}>
                         <img src={GoogleIcon} alt='Google Logo'/>
-                        <p> Or Log In with Google</p>
+                        <p> Sign In with Google</p>
                     </div>
+                    <button className='btn2' onClick={() => dispatch(changeMenu('Register'))}> Create an Account </button>
                 </div>
                 : <Register /> }
             </div>
