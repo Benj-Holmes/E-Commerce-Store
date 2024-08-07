@@ -21,11 +21,13 @@ const CartItem = (props) => {
     return (
         <div className='cartItem'>
             <p className='deleteItem' onClick={handleDelete}> &#x2716; </p>
-            <h4> {props.name} </h4>
-            <div className="prodInfo">
-            <p> Price: {props.price} </p>
-            <p> Size : {props.item_size} </p>
-            <p> Quantity: {props.quantity} </p>
+            <div className='details'>
+                <h3> {props.name} </h3>
+                <div className='pDetails'>
+                    <p> Price {props.price} </p>
+                    <p> Size {props.size} </p>
+                    <p> Quantity {props.quantity} </p>
+                </div>
             </div>
             <img src={imgPath} alt=''></img>
         </div>

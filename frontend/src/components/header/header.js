@@ -37,7 +37,7 @@ const Header = () => {
         {cartMenuOpen === true ? 
         <motion.div className='cartContainer' 
         animate={{ x: 0}} initial={{ x:550}} 
-        transition={{type: 'tween', duration: 1}}
+        transition={{type: 'tween', duration: 0.5}}
         exit={{ x:550 }}>
         <ShoppingCart /> 
         </motion.div>
