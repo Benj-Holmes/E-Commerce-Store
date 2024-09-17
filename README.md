@@ -92,8 +92,12 @@ then the user can come back to it at a later time.
 
 ### Account Page
 Still in Progress! Stay tuned!
+
 ### Checkout
-Still in Progress! stay tuned.
+
+![image](https://github.com/user-attachments/assets/f98cdb66-8f0d-454a-abea-fda543208f10)
+*Example of the Stripe Payment Page
+
 
 
 
