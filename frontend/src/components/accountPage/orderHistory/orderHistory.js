@@ -26,9 +26,10 @@ const OrderHistory = () => {
     return (
         <div className='accountContainer'>
             <div className="accButtons">
-                <h5 onClick={handleLogOut}> &#x2190; Log Out  </h5>
+                <img src={'/display/AccountBackground.png'} />
                 <h1> Welcome to Your Account { user.first_name ? <span> {user.first_name} </span> : '' } </h1>
-                <h5 onClick={() => navigate('/checkout')}> Checkout &#x2192; </h5>
+                <h5 id='logOutBtn' onClick={handleLogOut}> &#x2190; Log Out  </h5>
+                <h5 id='checkoutBtn' onClick={() => navigate('/checkout')}> Checkout &#x2192; </h5>
             </div>
             <h3> Your Previous Orders</h3>
             <div className='listTitles'>

@@ -53,7 +53,7 @@
     align-items: center;
     height: 50px;
     border: 2px solid black;
-    background-color: rgb(116, 116, 116);
+    background-color: blue;
     color: white;
     padding: 5px;
     cursor: pointer;
@@ -154,4 +154,33 @@
     align-items: center;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 1px;
+}
+.accButtons h5 {
+    position: absolute;
+    top: 500px;
+}
+.accButtons h1 {
+    position: absolute;
+    color: black;
+    font-size: 60px;
+    letter-spacing: 8px;
+    top: 250px;
+    right: 25%;
+    left: 25%;
+    background-color: rgb(214, 217, 218);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.accButtons img {
+    width: 100%;
+    height: 600px;
+    opacity: 0.9;
+}
+#logOutBtn {
+    left: 30%;
+    width: 150px;
+}
+#checkoutBtn {
+    right: 30%;
+    width: 150px;
 }
