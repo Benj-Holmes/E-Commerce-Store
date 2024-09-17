@@ -93,7 +93,10 @@ then the user can come back to it at a later time.
 ### Account Page
 Still in Progress! Stay tuned!
 
+
 ### Checkout
+![image](https://github.com/user-attachments/assets/084a2b71-69b4-40e7-8a79-159ab64c0b30)
+*The Checkout Page
 
 ![image](https://github.com/user-attachments/assets/f98cdb66-8f0d-454a-abea-fda543208f10)
 *Example of the Stripe Payment Page
