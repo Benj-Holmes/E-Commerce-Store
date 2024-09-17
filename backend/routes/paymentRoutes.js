@@ -8,6 +8,10 @@ const stripe = Stripe(process.env.STRIPE_SECRET_TEST);
 const attemptPayment = async (req, res) => {
     // Stripe Config
     const line_items = req.body.cartItems.map((item) => {
+        
+        const priceWithoutPoundSymbol = item.price.replace('£', '');
+        const unitAmount = parseInt(parseFloat(priceWithoutPoundSymbol) * 100, 10);
+
         return {
             price_data: {
                 currency: 'gbp',
@@ -18,7 +22,7 @@ const attemptPayment = async (req, res) => {
                         id: item.product_id
                     },
                 },
-                unit_amount: item.priceInt * 100,
+                unit_amount: unitAmount,
             },
             quantity: item.quantity,
         }
