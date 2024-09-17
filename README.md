@@ -83,7 +83,7 @@ that a normal user would have.
 
 ### Shopping Cart
 
-![cart](https://github.com/user-attachments/assets/542d1172-33b0-4933-b22a-0ec7443e9b60)
+![image](https://github.com/user-attachments/assets/5c75f3eb-47bf-445c-b0b4-3289ea502f51)
 * Here is an Example of a Shopping Cart, all of the items are on display, with an option to remove them from the cart. If the user is not logged in, this is considered a temporary cart, and they will be prompted to log in, which will change the items to a regular shopping cart which will be saved in the database, and
 then the user can come back to it at a later time.
 
