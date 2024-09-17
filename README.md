@@ -87,7 +87,7 @@ that a normal user would have.
 * Here is an Example of a Shopping Cart, all of the items are on display, with an option to remove them from the cart. If the user is not logged in, this is considered a temporary cart, and they will be prompted to log in, which will change the items to a regular shopping cart which will be saved in the database, and
 then the user can come back to it at a later time.
 
-![cart2](https://github.com/user-attachments/assets/54bc5563-0048-4a28-ac73-a224468932b4)
+![image](https://github.com/user-attachments/assets/0cab012b-0938-4070-be04-2b2bafdb9782)
 * If the user is logged in, their cart items are saved, and the reminder to log in is not present.
 
 ### Account Page
