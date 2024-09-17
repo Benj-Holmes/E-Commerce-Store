@@ -31,7 +31,7 @@
 }
 .closeMenu {
     font-size: 20px;
-    border: 1px solid black;
+    border: 2px solid #acacac;
     position: absolute;
     padding-right: 5px;
     padding-left: 5px;
@@ -40,7 +40,7 @@
     border-radius: 20%;
 }
 .deleteItem {
-    border: 1px solid black;
+    border: 2px solid #acacac;
     border-radius: 10%;
     font-size: 35px;
     margin-left: 5px;
@@ -66,22 +66,24 @@
     margin-right: auto;
     align-items: center;
     padding: 5px;
-    border: 1px solid black;
+    border: 2px solid #acacac;
     border-radius: 20px;
     margin-bottom: 10px;
-    background-color: rgb(214, 217, 218);
+    background-color: #e2e2e2;
 
 }
 .cartItem img {
     max-width: 180px;
     max-height: 180px;
     margin-left: 20px;
-    border: 1px solid black;
+    border: 2px solid #acacac;
     border-radius: 5px;
     margin-right: 10px;
 }
 .pDetails {
     display: flex;
+    width: 90%;
+    justify-content: space-evenly;
 }
 .checkout {
     display: flex;

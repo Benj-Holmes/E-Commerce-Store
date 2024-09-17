@@ -141,9 +141,10 @@
     color: white;
     background-color: blue;
     border: 2px solid black;
+    border-radius: 20px;
     height: 80%;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: 20px;
+    margin-top: 5px;
     padding: 10px;
     cursor: pointer;
 }
@@ -154,7 +155,7 @@
     width: 100%;
 }
 .cartBackground img {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     height: 600px;
     opacity: 90%;
     width: 100%;
@@ -164,6 +165,7 @@
     color: black;
     font-size: 60px;
     letter-spacing: 10px;
+    border: 1px solid black;
     top: 250px;
     right: 25%;
     left:25%;
