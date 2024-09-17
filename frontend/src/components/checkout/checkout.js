@@ -33,7 +33,10 @@ const Checkout = () => {
             </div>
             : 
             <div>
-                <h1> Your Shopping Cart </h1>
+                <div className='cartBackground'>
+                    <img src={'/display/CartBackground.jpg'}/>
+                    <h1> Your Shopping Cart </h1>
+                </div>
                 <div className='infoContainer2'>
                     <div className="itemlist2">
                         { cartItems !== null ? cartItems.map((item, index) => {

@@ -1,7 +1,6 @@
 .itemlist2 {
-   width: 95%;
-   min-height: 200px;
-   height: 100%;
+    width: 90%; 
+    min-height: 200px;
 }
 .checkoutContainer {
     min-height: 1075px;
@@ -13,6 +12,23 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
     letter-spacing: 2px;
+}
+.checkoutItem h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    margin: 0;
+}
+.productInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: column;
+}
+.productInfo h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 5px 0;
+    color: #333;
 }
 .infoContainer {
     display: flex;
@@ -42,9 +58,9 @@
 .infoContainer2 {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-    margin-top: 150px;
-    min-height: 900px;
+    padding-top: 40px;
+    min-height: 800px;
+    background-color: #fafafa;
 }
 .paymentContainer {
     width: 100%;
@@ -59,50 +75,61 @@
     cursor: pointer;
     font-size: 20px;
 }
-.checkoutItem{ 
+.checkoutItem {
     display: grid;
-    height: 150px;
-    font-size: 20px;
+    grid-template-columns: 1fr 3fr 2fr 2fr 1fr;
     align-items: center;
-    grid-template-columns: 1fr 4fr 2fr 3fr 1fr;
-    background-color: gray;
-    border: 3px solid black;
-    margin-bottom: 2px;
-    margin-right: 10px;
+    height: 180px;
+    font-size: 18px; 
+    background-color: #e2e2e2;
+    border: 2px solid #acacac; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+    padding: 10px; 
 }
 .removeText {
     font-family: 'Bebas Neue', cursive;
-    color: rgb(180, 0, 0);
-    text-shadow: 1px 1px 1px rgb(133, 132, 132);
+    color: #ff3333;
+    text-shadow: 1px 1px 1px #888;
     letter-spacing: 1px;
-    margin-right: 20px;
-    margin-left: -20px;
-    border: 1px solid black;
-    padding: 5px;
-    background-color: aliceblue;
-    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 2px solid #ff3333;
     border-radius: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+.removeText:hover {
+    background-color: #ffcccc;
 }
 .checkoutItem img {
-    width: 120px;
-    height: 120px;
-    padding-left: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain; 
+    padding-left: 5px;
 }
 .qtyContainer {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 .qtyContainer p {
-    font-size: 35px;
-    margin-left: 20px;
-    margin-right: 20px;
+    font-size: 35px; 
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    background-color: #fff;
     border: 1px solid black;
-    width: 50px;
-    height: 50px;
-    background-color: aliceblue;
+    border-radius: 50%;
     cursor: pointer;
-    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.qtyContainer p:hover {
+    background-color: #e0e0e0; /* Slight hover effect */
 }
 .successBox {
     min-height: 1050px;
@@ -122,4 +149,24 @@
 }
 .checkoutItem img {
     margin-left: 20px;
+}
+.cartBackground {
+    width: 100%;
+}
+.cartBackground img {
+    border-bottom: 2px solid black;
+    height: 600px;
+    opacity: 90%;
+    width: 100%;
+}
+.cartBackground h1{
+    position: absolute;
+    color: black;
+    font-size: 60px;
+    letter-spacing: 10px;
+    top: 250px;
+    right: 25%;
+    left:25%;
+    background-color: rgb(214, 217, 218);
+    border-radius: 20px;
 }
