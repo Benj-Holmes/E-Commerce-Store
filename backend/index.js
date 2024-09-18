@@ -61,6 +61,10 @@ app.get('/auth/google/callback', passport.authenticate("google", { session: true
     res.redirect(process.env.REACT_URL`/account`)
 })
 
+app.get('/', (req, res) => {
+    res.send('Hello, world!');
+});
+
 // Route Handlers ---------------------------------------------------------------------
 app.use('/api/cart', require('./routes/cartRoutes'));
 app.use('/api/orders', require('./routes/orderRoutes'));
