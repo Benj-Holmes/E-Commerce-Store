@@ -1,7 +1,7 @@
 const {Router} = require("express");
 const router = Router();
 const pool = require("../config/db");
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 // Test Route to get ALL Users from DB
 router.get('/all', async (req, res) => {
