@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: process.env.REACT_URL,
     credentials: true,
     preflightContinue: true
 }));
@@ -58,7 +58,7 @@ app.get('/auth/google', passport.authenticate('google', {
 app.get('/auth/google/callback', passport.authenticate("google", { session: true }), (req, res) => {
     // Cant Res.send and res.redirect, so i think i have to call getUser after this.
     // res.send(req.user);
-    res.redirect('http://localhost:3000/account')
+    res.redirect(process.env.REACT_URL`/account`)
 })
 
 // Route Handlers ---------------------------------------------------------------------
