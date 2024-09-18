@@ -91,15 +91,17 @@ then the user can come back to it at a later time.
 * If the user is logged in, their cart items are saved, and the reminder to log in is not present.
 
 ### Account Page
-Still in Progress! Stay tuned!
+![image](https://github.com/user-attachments/assets/28224c6f-9707-4425-b19b-c24943da3e44)
+
+* The Account Page, where our user can see their previous orders, continue to the checkout page or log out.
 
 
 ### Checkout
 ![image](https://github.com/user-attachments/assets/084a2b71-69b4-40e7-8a79-159ab64c0b30)
-*The Checkout Page
+* The Checkout Page
 
 ![image](https://github.com/user-attachments/assets/f98cdb66-8f0d-454a-abea-fda543208f10)
-*Example of the Stripe Payment Page
+* Example of the Stripe Payment Page
 
 
 
