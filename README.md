@@ -98,7 +98,7 @@ then the user can come back to it at a later time.
 
 ### Checkout
 ![image](https://github.com/user-attachments/assets/084a2b71-69b4-40e7-8a79-159ab64c0b30)
-* The Checkout Page
+* The Checkout Page, where the user can finalize the items that they have in their cart before continuing to payment
 
 ![image](https://github.com/user-attachments/assets/f98cdb66-8f0d-454a-abea-fda543208f10)
 * Example of the Stripe Payment Page
