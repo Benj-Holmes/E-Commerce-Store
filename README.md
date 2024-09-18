@@ -103,6 +103,7 @@ then the user can come back to it at a later time.
 ![image](https://github.com/user-attachments/assets/f98cdb66-8f0d-454a-abea-fda543208f10)
 * Example of the Stripe Payment Page
 
-
+![image](https://github.com/user-attachments/assets/3bed12f5-bab7-43e4-97e6-9ca1b4e927a3)
+* An Example of the final 'Checkout Success' Page a user will see once they've paid, before they're redirected back to the home page.
 
 
