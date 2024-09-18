@@ -132,7 +132,7 @@
     background-color: #e0e0e0; /* Slight hover effect */
 }
 .successBox {
-    min-height: 1050px;
+    min-height: 650px;
 }
 .paymentContainer button {
     font-family: 'Bebas Neue', cursive;
@@ -171,4 +171,45 @@
     left:25%;
     background-color: rgb(214, 217, 218);
     border-radius: 20px;
+}
+.successBox img {
+    height: 600px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.successBox h1 {
+    background-color: rgb(214, 217, 218);
+    position: absolute;
+    letter-spacing: 8px;
+    font-size: 60px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-family: 'Bebas Neue', cursive;
+    top: 250px;
+    left: 25%;
+    right: 25%;
+}
+.successText {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    min-height: 430px;
+    background-color: rgb(214, 217, 218);
+    border: 2px solid rgb(130, 131, 131);
+    margin-top: -25px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+.successText p {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.successLogo {
+    height: 100px;
+    width: 140px;
 }
