@@ -106,4 +106,8 @@ then the user can come back to it at a later time.
 ![image](https://github.com/user-attachments/assets/3bed12f5-bab7-43e4-97e6-9ca1b4e927a3)
 * An Example of the final 'Checkout Success' Page a user will see once they've paid, before they're redirected back to the home page.
 
+### Database Schema
+![image](https://github.com/user-attachments/assets/064feaa4-5052-4779-a46d-2d66de0f17de)
+
+
 
