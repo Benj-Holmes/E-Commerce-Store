@@ -4,7 +4,7 @@ import axios from 'axios';
 export const registerUser = createAsyncThunk(
     'auth/registerUser',
     async (data) => {
-        const response = await axios.post('http://localhost:4000/api/user/register', {
+        const response = await axios.post('https://e-commerce-store-backend-livid.vercel.app/api/user/register', {
             first_name: data.fname,
             last_name: data.lname,
             email: data.email,
@@ -17,7 +17,7 @@ export const registerUser = createAsyncThunk(
 export const logInUser = createAsyncThunk(
     'auth/logInUser',
     async (data) => {
-        const response = await axios.post('http://localhost:4000/auth/login', {
+        const response = await axios.post('https://e-commerce-store-backend-livid.vercel.app/auth/login', {
             email: data.email,
             password: data.password
         }, { withCredentials: true });
@@ -29,9 +29,9 @@ export const logInUser = createAsyncThunk(
 export const getUser = createAsyncThunk(
     'auth/getUser',
     async() => {
-        const response = await axios.get('http://localhost:4000/api/user',
+        const response = await axios.get('https://e-commerce-store-backend-livid.vercel.app/api/user',
         {withCredentials: true,
-        headers: {'Access-Control-Allow-Origin': 'http://localhost:4000'}
+        headers: {'Access-Control-Allow-Origin': 'https://e-commerce-store-backend-livid.vercel.app'}
         });
         return response.data;
        
@@ -41,7 +41,7 @@ export const getUser = createAsyncThunk(
 export const logOutUser = createAsyncThunk(
     'auth/logout',
     async () => {
-        const response = axios.get("http://localhost:4000/auth/logout", 
+        const response = axios.get("https://e-commerce-store-backend-livid.vercel.app/auth/logout", 
         { withCredentials: true });
         return (await response).data;
     }

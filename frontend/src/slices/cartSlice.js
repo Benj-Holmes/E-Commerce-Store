@@ -5,7 +5,7 @@ import axios from 'axios';
 export const checkCart = createAsyncThunk(
     'cart/createCart',
     async() => {
-        const response = await axios.get(`http://localhost:4000/api/cart`, {withCredentials: true});
+        const response = await axios.get(`https://e-commerce-store-backend-livid.vercel.app/api/cart`, {withCredentials: true});
         return response.data;
     }
 )
@@ -14,7 +14,7 @@ export const checkCart = createAsyncThunk(
 export const getCartItems = createAsyncThunk(
     'cart/getCartItems',
     async() => {
-        const response = await axios.get(`http://localhost:4000/api/cart/items`, {withCredentials: true});
+        const response = await axios.get(`https://e-commerce-store-backend-livid.vercel.app/api/cart/items`, {withCredentials: true});
         return response.data;
     }
 )
@@ -22,7 +22,7 @@ export const getCartItems = createAsyncThunk(
 export const addItemToCart = createAsyncThunk(
     'cart/addItemToCart',
     async(data) => {
-        const response = await axios.post(`http://localhost:4000/api/cart`, {
+        const response = await axios.post(`https://e-commerce-store-backend-livid.vercel.app/api/cart`, {
             product_id: data.product_id,
             quantity: data.quantity,
             item_size: data.item_size
@@ -35,7 +35,7 @@ export const addItemToCart = createAsyncThunk(
 export const deleteItemFromCart = createAsyncThunk(
     'cart/deleteItemFromCart',
     async(prodId) => {
-        const response = await axios.delete(`http://localhost:4000/api/cart/${prodId}`, 
+        const response = await axios.delete(`https://e-commerce-store-backend-livid.vercel.app/api/cart/${prodId}`, 
         {withCredentials: true});
         return response.data;
     }
@@ -44,7 +44,7 @@ export const deleteItemFromCart = createAsyncThunk(
 export const checkoutCart = createAsyncThunk(
     'cart/checkoutCart',
     async(data) => {
-        const response = await axios.post('http://localhost:4000/api/payment/create-checkout-session', {
+        const response = await axios.post('https://e-commerce-store-backend-livid.vercel.app/api/payment/create-checkout-session', {
             cartItems: data.cartItems,
         }, {withCredentials: true}).then((res) => {
             if(res.data.url) {
@@ -58,7 +58,7 @@ export const checkoutCart = createAsyncThunk(
 export const setCartToInactive = createAsyncThunk(
     'cart/setCartToInactive',
     async() => {
-        const response = await axios.put(`http://localhost:4000/api/cart`, {}, {withCredentials: true});
+        const response = await axios.put(`https://e-commerce-store-backend-livid.vercel.app/api/cart`, {}, {withCredentials: true});
         return response.data;
     }
 )
@@ -67,7 +67,7 @@ export const updateCartQuantity = createAsyncThunk(
     'cart/incrementCartQuantity',
     async (data) => {
         console.log(data);
-        const response = await axios.put('http://localhost:4000/api/cart/increment', {
+        const response = await axios.put('https://e-commerce-store-backend-livid.vercel.app/api/cart/increment', {
             cart_id: data.cart_id,
             product_id: data.product_id,
             quantity: data.quantity
