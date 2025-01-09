@@ -5,7 +5,8 @@ import axios from 'axios';
 export const getProducts = createAsyncThunk(
     'product/getProducts',
     async () => {
-        const response = await axios.get('https://e-commerce-store-backend-livid.vercel.app/api/product');
+        //console.log('API URL:', process.env.REACT_APP_API_URL);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/product`);
         return response.data;
     }
 );
@@ -13,7 +14,7 @@ export const getProducts = createAsyncThunk(
 export const getReviews = createAsyncThunk(
     'products/getReviews',
     async (id) => {
-        const response = await axios.get(`https://e-commerce-store-backend-livid.vercel.app/api/reviews/${id}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/reviews/${id}`);
         return response.data;
     }
 );
@@ -21,7 +22,7 @@ export const getReviews = createAsyncThunk(
 export const getRecommendations = createAsyncThunk(
     'products/getRecommendations',
     async () => {
-        const response = await axios.get('https://e-commerce-store-backend-livid.vercel.app/api/product/discover');
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/product/discover`);
         return response.data;
     }
 );

@@ -4,7 +4,7 @@ import axios from 'axios';
 export const createOrder = createAsyncThunk(
     'accountPage/createOrder',
     async () => {
-        const response = await axios.post(`https://e-commerce-store-backend-livid.vercel.app/api/orders`, {}, {withCredentials: true});
+        const response = await axios.post(`${process.env.API_URL}/api/orders`, {}, {withCredentials: true});
         return response.data;
     }
 )
@@ -12,7 +12,7 @@ export const createOrder = createAsyncThunk(
 export const getMembersOrders = createAsyncThunk(
     'accountPage/getMembersOrders',
     async () => {
-        const response = await axios.get('https://e-commerce-store-backend-livid.vercel.app/api/orders', {withCredentials: true});
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/orders`, {withCredentials: true});
         return response.data;
     }
 )
@@ -20,7 +20,7 @@ export const getMembersOrders = createAsyncThunk(
 export const getOrderItems = createAsyncThunk(
     'accountPage/getOrderItems',
     async (order_id) => {
-        const response = await axios.get(`https://e-commerce-store-backend-livid.vercel.app/api/orders/${order_id}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/orders/${order_id}`);
         return response.data;
     }
 

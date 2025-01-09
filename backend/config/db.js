@@ -3,7 +3,7 @@ require("dotenv").config();
 
 const pool = new Pool({
     user: "postgres",
-    host: "aws-0-us-east-1.pooler.supabase.com",
+    host: "localhost",
     database: "eCommerce",
     password: process.env.DB_PASSWORD,
     port: 5432
